@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7942652A184C334500EB6877 /* MYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79426529184C334500EB6877 /* MYScrollView.m */; };
+		79718A6B1869C968008E7320 /* MYHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79718A6A1869C968008E7320 /* MYHelper.m */; };
 		79EE23691840D45500415A12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EE23681840D45500415A12 /* Foundation.framework */; };
 		79EE236B1840D45500415A12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EE236A1840D45500415A12 /* CoreGraphics.framework */; };
 		79EE236D1840D45500415A12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EE236C1840D45500415A12 /* UIKit.framework */; };
@@ -38,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79426528184C334500EB6877 /* MYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYScrollView.h; sourceTree = "<group>"; };
+		79426529184C334500EB6877 /* MYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYScrollView.m; sourceTree = "<group>"; };
+		79718A691869C968008E7320 /* MYHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHelper.h; sourceTree = "<group>"; };
+		79718A6A1869C968008E7320 /* MYHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHelper.m; sourceTree = "<group>"; };
 		79EE23651840D45500415A12 /* ObjectiveIgniter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveIgniter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EE23681840D45500415A12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79EE236A1840D45500415A12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,7 +62,6 @@
 		79EE23AD1840D46F00415A12 /* MYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYButton.m; sourceTree = "<group>"; };
 		79EE23AE1840D46F00415A12 /* MYCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCell.h; sourceTree = "<group>"; };
 		79EE23AF1840D46F00415A12 /* MYCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCell.m; sourceTree = "<group>"; };
-		79EE23B01840D46F00415A12 /* MYLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLoader.h; sourceTree = "<group>"; };
 		79EE23B11840D46F00415A12 /* MYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNavigationController.h; sourceTree = "<group>"; };
 		79EE23B21840D46F00415A12 /* MYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNavigationController.m; sourceTree = "<group>"; };
 		79EE23B31840D46F00415A12 /* MYTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTableView.h; sourceTree = "<group>"; };
@@ -169,7 +174,8 @@
 		79EE23AB1840D46F00415A12 /* Cores */ = {
 			isa = PBXGroup;
 			children = (
-				79EE23B01840D46F00415A12 /* MYLoader.h */,
+				79426528184C334500EB6877 /* MYScrollView.h */,
+				79426529184C334500EB6877 /* MYScrollView.m */,
 				79EE23AC1840D46F00415A12 /* MYButton.h */,
 				79EE23AD1840D46F00415A12 /* MYButton.m */,
 				79EE23AE1840D46F00415A12 /* MYCell.h */,
@@ -191,6 +197,8 @@
 			children = (
 				79EE23C71840DB7600415A12 /* MYStatusBarManager.h */,
 				79EE23C81840DB7600415A12 /* MYStatusBarManager.m */,
+				79718A691869C968008E7320 /* MYHelper.h */,
+				79718A6A1869C968008E7320 /* MYHelper.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -296,10 +304,12 @@
 				79EE23791840D45500415A12 /* MYAppDelegate.m in Sources */,
 				79EE23C21840D47000415A12 /* MYCell.m in Sources */,
 				79EE23C91840DB7600415A12 /* MYStatusBarManager.m in Sources */,
+				7942652A184C334500EB6877 /* MYScrollView.m in Sources */,
 				79EE23C41840D47000415A12 /* MYTableView.m in Sources */,
 				79EE23751840D45500415A12 /* main.m in Sources */,
 				79EE23C51840D47000415A12 /* MYView.m in Sources */,
 				79EE23BD1840D47000415A12 /* UIColor+Util.m in Sources */,
+				79718A6B1869C968008E7320 /* MYHelper.m in Sources */,
 				79EE23C11840D47000415A12 /* MYButton.m in Sources */,
 				79EE23C31840D47000415A12 /* MYNavigationController.m in Sources */,
 			);
@@ -495,6 +505,7 @@
 				79EE239C1840D45500415A12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79EE239D1840D45500415A12 /* Build configuration list for PBXNativeTarget "ObjectiveIgniterTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +514,7 @@
 				79EE239F1840D45500415A12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,4 +1,4 @@
-// MYLoader.h
+// MYScrollView.h
 //
 // Copyright (c) 2013 Shintaro Kaneko (http://kaneshinth.com)
 //
@@ -20,31 +20,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#ifndef __MYLoader_h__
-#define __MYLoader_h__
+#import <UIKit/UIKit.h>
 
-#import "UIColor+Util.h"
-#import "UIFont+Util.h"
+typedef NS_ENUM(NSInteger, MYScrollViewPagingDirection) {
+    MYScrollViewPagingDirectionHorizontal = 0,
+    MYScrollViewPagingDirectionVertical,
+};
 
-// Make Debug Log not to use NSLog basically
-#ifdef DEBUG
-# define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
-#else
-# define DLog(...)
-#endif
-
-// Remove NSLog if Release build
-#ifndef DEBUG
-# ifdef NSLog
-#  undef NSLog
-# endif
-# define NSLog(...)
-#endif
-
-static inline BOOL
-__OSVersionNumberAtLeast_iOS_7_0() {
-    return (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1);
-}
-#define OSVersionNumberAtLeast_iOS_7_0 __OSVersionNumberAtLeast_iOS_7_0()
-
-#endif // __MYLoader_h__
+@interface MYScrollView : UIScrollView
+@property (nonatomic, assign) MYScrollViewPagingDirection pagingDirection;
+@property (nonatomic, assign) NSInteger numberOfPages;
+@property (nonatomic, assign, readonly) NSInteger currentPage;
+@property (nonatomic, assign) BOOL showsScrollIndicator;
+@end

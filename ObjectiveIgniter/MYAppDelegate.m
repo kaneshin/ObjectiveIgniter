@@ -22,7 +22,7 @@
 
 #import "MYAppDelegate.h"
 
-#import "MYLoader.h"
+#import "MYHelper.h"
 #import "MYViewController.h"
 #import "MYButton.h"
 
